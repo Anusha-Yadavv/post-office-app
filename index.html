@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <main>
+        <!-- left section -->
+        <section id="left-section">
+            <h1>Post Office Application.</h1>
+            <p>This Application Allows you to extract information about the nearest Post Offices, based on your
+                location.</p>
+            <div class="img-container">
+                <img src="./assets/image.svg" alt="post man">
+            </div>
+
+        </section>
+        <!-- right section -->
+        <section id="right-section">
+            <h3></h3>
+
+            <!-- Button to get location -->
+            <button id="getLocationBtn">Get Started</button>
+        </section>
+
+
+        <section id="map-section">
+            <section id="details-section">
+                <h4 class="ip-address"></h4>
+                <div class="details">
+
+                    <div>
+                        <h5 id="lat">lat</h5>
+                        <h5 id="long"></h5>
+                    </div>
+                    <div>
+                        <h5 id="city">city</h5>
+                        <h5 id="region"></h5>
+                    </div>
+                    <div>
+                        <h5 id="org"></h5>
+                        <h5 id="hostname"></h5>
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+            <section id="current-section">
+                <h1>Your Current Location</h1>
+                <!-- Displaying Google Map -->
+                <iframe id="mapIframe" width="90%" height="500" frameborder="0" style="border:0"></iframe>
+            </section>
+
+
+
+
+            <section id="more-info-section">
+                <h1>More Information About You</h1>
+                <h5 id="postOfficeCount"></h5>
+
+                <div id="more-info-container">
+
+
+                </div>
+
+            </section>
+
+            <section id="post-offices-section">
+                <h1>Post Offices Near You</h1>
+                <div class="input-container">
+                    <input type="text" id="searchBox" placeholder="Search By Name">
+                </div>
+
+                <!-- Displaying list of post offices -->
+                <ul id="postOfficeList"></ul>
+
+
+            </section>
+
+
+
+        </section>
+    </main>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

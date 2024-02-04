@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
+button {
+    width: 230px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 600;
+    /* color: black; */
+    border-radius: 10px;
+    color: white;
+    background-color: #575A85;
+
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+iframe {
+    display: none;
+}
+
+#left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    /* margin: 10px; */
+    padding: 40px;
+}
+
+#left-section h1 {
+    color: #575A85;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+#left-section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+#right-section {
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    width: 50%;
+    /* height: 100%; */
+    background-color: #575A85;
+    height: 100vh;
+}
+
+#right-section h3 {
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-top: 60px;
+    width: 60%;
+}
+
+#getLocationBtn {
+    margin: 20px;
+}
+
+#searchBox {
+    display: none;
+}
+
+#map-section {
+    display: none;
+    color: white;
+    margin: 20px;
+
+}
+
+#details-section {
+    /* background-color: rgb(194, 212, 25); */
+    width: 97vw;
+    /* color: black; */
+    padding: 20px;
+    /* margin: 30px; */
+
+
+
+
+}
+
+.ip-address {
+    color: red;
+    /* font-weight: 600; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    /* color: black; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 30px;
+}
+
+.details h5 {
+    margin-right: 100px;
+    /* font-weight: 600; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+
+#current-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #575A85;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin: 30px;
+    box-shadow: rgb(199, 196, 5) 0px 1px 4px, rgb(236, 193, 4) 0px 0px 0px 3px;
+
+}
+
+#current-section h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+}
+
+#more-info-section {
+    margin: 20px;
+    color: wheat;
+    padding-bottom: 50px;
+    /* padding-right: 30px; */
+    box-shadow: rgba(92, 83, 83, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#more-info-section h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px;
+    color: yellow;
+
+
+}
+
+#post-offices-section h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px;
+    color: yellow;
+
+
+
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#post-offices-section input {
+    width: 60%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 20px;
+    border: 1px solid #575A85;
+    background-color: black;
+    color: white;
+}
+
+#postOfficeList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.list-item {
+    background-color: #575A85;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: rgba(228, 121, 219, 0.342); */
+    cursor: pointer;
+    box-shadow: rgb(199, 196, 5) 0px 1px 4px, rgb(236, 193, 4) 0px 0px 0px 3px;
+
+    transition: background-color 2s ease-out 100ms
+}
+
+.list-item-heading {
+    font-size: 22px;
+}
+
+.list-item:hover {
+    background-color: #e9cfdd;
+    color: black;
+
+}
+
+.span-ele {
+    color: yellow;
+}
